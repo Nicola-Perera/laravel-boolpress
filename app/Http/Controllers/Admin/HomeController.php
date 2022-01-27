@@ -15,7 +15,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        ddd(Auth::user());
+        // ddd(Auth::user());
         return view('admin.home');
     }
 }
