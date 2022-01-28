@@ -10,7 +10,7 @@ class ProductSeeder extends Seeder
      *
      * @return void
      */
-    public function run()
+    public function run(Faker $faker)
     {
         for ($i=0; $i < 15; $i++) { 
             $product = new Product();
