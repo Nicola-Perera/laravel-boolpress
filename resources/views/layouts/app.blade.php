@@ -34,6 +34,22 @@
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
 
+                        <li class="navbar-nav mr-auto">
+                            <a href="{{ route('home') }}" class="nav-link">Home</a>
+                        </li>
+                        
+                        <li class="navbar-nav mr-auto">
+                            <a href="#" class="nav-link">About us</a>
+                        </li>
+
+                        <li class="navbar-nav mr-auto">
+                            <a href="#" class="nav-link">Contacts</a>
+                        </li>
+
+                        <li class="navbar-nav mr-auto">
+                            <a href="{{ route('products.index') }}" class="nav-link">Shop</a>
+                        </li>
+
                     </ul>
 
                     <!-- Right Side Of Navbar -->
@@ -55,6 +71,11 @@
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+
+                                    <a class="dropdown-item" href="{{ route('admin.dashboard') }}">
+                                        Dashboard
+                                    </a>
+
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
