@@ -4,7 +4,7 @@
 
     <div class="container">
         <div class="row gy-2">
-            @foreach($products as product)
+            @foreach[$products as product]
 
             <div class="col-md-4">
                 <div class="card">
