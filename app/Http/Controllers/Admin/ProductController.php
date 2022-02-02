@@ -36,7 +36,7 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
-        ddd($request->all());
+        // ddd($request->all());
 
         // validate
         $validated = $request->validate([
@@ -62,7 +62,7 @@ class ProductController extends Controller
      */
     public function show(Product $product)
     {
-        //
+        return view('guest.products.show', compact('product')); 
     }
 
     /**

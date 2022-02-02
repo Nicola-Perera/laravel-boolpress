@@ -37,6 +37,10 @@
                         <li class="navbar-nav mr-auto">
                             <a href="{{ route('home') }}" class="nav-link">Home</a>
                         </li>
+
+                        <li class="navbar-nav mr-auto">
+                            <a href="{{ route('posts.index') }}" class="nav-link">Blog</a>
+                        </li>
                         
                         <li class="navbar-nav mr-auto">
                             <a href="#" class="nav-link">About us</a>

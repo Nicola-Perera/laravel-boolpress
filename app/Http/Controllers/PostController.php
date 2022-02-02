@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Product;
+use App\Models\Post;
 use Illuminate\Http\Request;
 
-class ProductController extends Controller
+class PostController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,17 +14,19 @@ class ProductController extends Controller
      */
     public function index()
     {
-        return view('guest.products.index', ['products' => Product::all()]);
+        $post = Post::orderByDesc('id')->paginate(12);
+        
+        return view('guest.posts.index', compact('post'));
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Product  $product
+     * @param  \App\Models\Post  $post
      * @return \Illuminate\Http\Response
      */
-    public function show(Product $product)
+    public function show(Post $post)
     {
-        return view('guest.products.show', compact('product')); 
+        //
     }
 }
